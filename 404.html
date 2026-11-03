@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'; frame-src 'none'">
+  <meta name="theme-color" content="#c31331">
+  <title>Tidewatch</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --brand: #c31331;
+      --brand-dark: #a51029;
+      --ink: #2f1317;
+      --muted: #79676a;
+      --paper: #faf7f5;
+      --line: #e8dbd9;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: 28px 20px;
+      color: var(--ink);
+      background: radial-gradient(ellipse at 50% 0%, #f7e6e7, transparent 65%), var(--paper);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+    main {
+      width: min(100%, 500px);
+      padding: clamp(28px, 7vw, 52px);
+      border: 1px solid var(--line);
+      border-top: 4px solid var(--brand);
+      border-radius: 18px;
+      background: #fff;
+      text-align: center;
+      box-shadow: 0 18px 70px -35px #57252f45;
+    }
+    .mark {
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 20px;
+      border: 1px solid #efbdc6;
+      border-radius: 50%;
+      background: #fff5f6;
+      color: var(--brand);
+      font: 600 28px/1 "Spectral", Georgia, serif;
+    }
+    h1 {
+      margin: 0;
+      color: var(--brand);
+      font-family: "Spectral", Georgia, serif;
+      font-size: clamp(2.5rem, 9vw, 3.5rem);
+      font-weight: 600;
+      line-height: 1.1;
+      letter-spacing: -0.035em;
+    }
+    p { margin: 18px 0 26px; font-size: 17px; }
+    .open {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      padding: 12px 24px;
+      border-radius: 8px;
+      background: var(--brand);
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .open:hover { background: var(--brand-dark); }
+    .open:focus-visible { outline: 3px solid var(--brand); outline-offset: 5px; }
+    .note { margin: 20px 0 0; color: var(--muted); font-size: 13px; }
+    @media (max-width: 360px) {
+      body { padding: 20px 14px; }
+      main { padding: 28px 22px; }
+      .open { width: 100%; gap: 12px; padding-inline: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <main aria-labelledby="title">
+    <div class="mark" aria-hidden="true">T</div>
+    <h1 id="title">Tidewatch</h1>
+    <p>Open your protected workspace.</p>
+    <a class="open" href="https://tidewatch.ajrobinson4271.chatgpt.site/" target="_top">Open Tidewatch <span aria-hidden="true">→</span></a>
+    <p class="note">Sign in to continue.</p>
+  </main>
+</body>
+</html>
